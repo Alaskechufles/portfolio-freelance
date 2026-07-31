@@ -1,19 +1,20 @@
-import { projects } from '../../data/portfolio';
+import { getProjects } from '../../data/portfolio';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export default function Work() {
+  const { t, language } = useLanguage();
+  const projects = getProjects(language);
+
   return (
     <section id="work" className="py-22.5">
       <div data-reveal className="reveal mb-11.5 max-w-160">
         <div className="mb-4 font-mono text-[13px] tracking-[.18em] text-purple-500 uppercase">
-          // projects
+          {t.work.kicker}
         </div>
         <h2 className="mb-4 font-display text-[clamp(28px,4vw,40px)] leading-[1.15] font-bold tracking-[-.02em]">
-          What I can build for you
+          {t.work.heading}
         </h2>
-        <p className="text-[17px] leading-[1.65] text-[#5a5170]">
-          Three examples of the kind of work I ship — each one built with React, Tailwind CSS and Supabase,
-          and ready to be adapted to your product.
-        </p>
+        <p className="text-[17px] leading-[1.65] text-[#5a5170]">{t.work.description}</p>
       </div>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6">
         {projects.map((p) => (
@@ -61,7 +62,7 @@ export default function Work() {
                   href={p.demo}
                   className="min-w-33 flex-1 rounded-[11px] bg-gradient-to-br from-violet-600 to-fuchsia-500 px-4 py-3 text-center text-sm font-semibold text-white no-underline shadow-[0_6px_18px_rgba(124,58,237,.26)]"
                 >
-                  View live demo
+                  {t.work.viewDemo}
                 </a>
                 {/* <a
                   href={p.code}

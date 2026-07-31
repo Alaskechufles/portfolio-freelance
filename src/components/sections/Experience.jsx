@@ -1,14 +1,18 @@
-import { experience } from '../../data/portfolio';
+import { getExperience } from '../../data/portfolio';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export default function Experience() {
+  const { t, language } = useLanguage();
+  const experience = getExperience(language);
+
   return (
     <section id="experience" className="py-22.5">
       <div data-reveal className="reveal mb-10.5">
         <div className="mb-4 font-mono text-[13px] tracking-[.18em] text-purple-500 uppercase">
-          // experience
+          {t.experience.kicker}
         </div>
         <h2 className="font-display text-[clamp(28px,4vw,40px)] font-bold tracking-[-.02em]">
-          Where I&apos;ve worked
+          {t.experience.heading}
         </h2>
       </div>
       <div className="flex flex-col">

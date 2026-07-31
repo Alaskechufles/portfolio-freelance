@@ -1,12 +1,16 @@
-import { stackGroups } from '../../data/portfolio';
+import { getStackGroups } from '../../data/portfolio';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export default function Stack() {
+  const { t, language } = useLanguage();
+  const stackGroups = getStackGroups(language);
+
   return (
     <section id="stack" className="py-22.5">
       <div data-reveal className="reveal mb-10.5">
-        <div className="mb-4 font-mono text-[13px] tracking-[.18em] text-purple-500 uppercase">// stack</div>
+        <div className="mb-4 font-mono text-[13px] tracking-[.18em] text-purple-500 uppercase">{t.stack.kicker}</div>
         <h2 className="font-display text-[clamp(28px,4vw,40px)] font-bold tracking-[-.02em]">
-          Tools I reach for
+          {t.stack.heading}
         </h2>
       </div>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4.5">
