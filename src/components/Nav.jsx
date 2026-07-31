@@ -15,8 +15,8 @@ export default function Nav() {
 
   return (
     <nav className="fixed top-5 left-1/2 z-[2000] flex max-w-[calc(100vw-40px)] -translate-x-1/2 items-center gap-7 rounded-full border border-violet-600/14 bg-white/72 py-2.75 pr-3 pl-5.5 shadow-[0_8px_30px_rgba(80,30,160,.10)] backdrop-blur-[18px]">
-      <a href="#top" className="flex font-display text-[15px] font-bold tracking-[-.01em] text-[#1c1430] no-underline">
-        <img src={logoImg} alt="logo" className="w-6" />
+      <a href="#top" className="flex items-center font-display text-[15px] font-bold tracking-[-.01em] text-[#1c1430] no-underline">
+        <img src={logoImg} alt="logo" className="w-6 shrink-0" />
         <span className="text-violet-600">.</span>
       </a>
       <div className="hidden items-center gap-5.5 md:flex">
