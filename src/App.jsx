@@ -4,6 +4,7 @@ import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Stack from './components/sections/Stack';
 import Work from './components/sections/Work';
+import AiWork from './components/sections/AiWork';
 import Experience from './components/sections/Experience';
 import Contact from './components/sections/Contact';
 import { useReveal } from './hooks/useReveal';
@@ -27,6 +28,7 @@ function App() {
           <About />
           <Stack />
           <Work />
+          <AiWork />
           <Experience />
           <Contact />
         </div>

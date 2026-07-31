@@ -1,10 +1,13 @@
+import ambarImg from '../assets/projects/ambar.png';
+
 export const projects = [
   {
     name: 'Modern Landing Page',
-    desc: 'A responsive landing page for businesses, with a contact form wired straight into a live database.',
+    desc: 'A responsive landing page for businesses or products, complete with animations.',
     tech: ['React', 'Tailwind CSS'],
-    demo: '#',
+    demo: 'https://demo-ambar-project.vercel.app',
     code: '#',
+    image: ambarImg,
   },
   {
     name: 'Web App with Auth',

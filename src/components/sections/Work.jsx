@@ -28,8 +28,16 @@ export default function Work() {
                 <span className="h-2.25 w-2.25 rounded-full bg-violet-600/20" />
                 <span className="h-2.25 w-2.25 rounded-full bg-violet-600/14" />
               </div>
-              <div className="flex flex-1 items-center justify-center rounded-2.5 border border-violet-600/12 bg-[repeating-linear-gradient(45deg,rgba(124,58,237,.10)_0_12px,rgba(255,255,255,.55)_12px_24px)]">
-                <span className="font-mono text-[11.5px] text-[#a98fd0]">[ {p.name} mockup ]</span>
+              <div className="flex flex-1 items-center justify-center overflow-hidden rounded-2.5 border border-violet-600/12 bg-[repeating-linear-gradient(45deg,rgba(124,58,237,.10)_0_12px,rgba(255,255,255,.55)_12px_24px)]">
+                {p.image ? (
+                  <img
+                    src={p.image}
+                    alt={`${p.name} preview`}
+                    className="h-full w-full object-cover object-top"
+                  />
+                ) : (
+                  <span className="font-mono text-[11.5px] text-[#a98fd0]">[ {p.name} mockup ]</span>
+                )}
               </div>
             </div>
             <div className="flex flex-1 flex-col gap-4 p-6.5">
@@ -49,6 +57,7 @@ export default function Work() {
               </div>
               <div className="mt-auto flex flex-wrap gap-2.5 pt-2">
                 <a
+                target="_blank"
                   href={p.demo}
                   className="min-w-33 flex-1 rounded-[11px] bg-gradient-to-br from-violet-600 to-fuchsia-500 px-4 py-3 text-center text-sm font-semibold text-white no-underline shadow-[0_6px_18px_rgba(124,58,237,.26)]"
                 >
