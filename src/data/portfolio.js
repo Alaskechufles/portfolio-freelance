@@ -1,4 +1,5 @@
 import ambarImg from '../assets/projects/ambar.png';
+import dashboardImg from '../assets/projects/dashboard-demo.png';
 
 const projectsBase = [
   {
@@ -11,14 +12,9 @@ const projectsBase = [
   {
     id: 'webapp',
     tech: ['React', 'Supabase', 'React Router'],
-    demo: '#',
+    demo: 'https://demo-dashboard-project-black.vercel.app/',
     code: '#',
-  },
-  {
-    id: 'payment',
-    tech: ['React', 'Supabase', 'Stripe'],
-    demo: '#',
-    code: '#',
+    image: dashboardImg,
   },
 ];
 
@@ -31,10 +27,6 @@ const projectsText = {
     webapp: {
       name: 'Web App with Auth',
       desc: 'A complete web app with user login, a personal dashboard and a real-time database.',
-    },
-    payment: {
-      name: 'Payment Integration',
-      desc: 'A store or booking system with Stripe checkout built in, running on a serverless backend.',
     },
   },
   es: {

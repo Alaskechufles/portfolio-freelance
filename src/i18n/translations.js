@@ -40,8 +40,12 @@ export const translations = {
       kicker: '// projects',
       heading: 'What I can build for you',
       description:
-        'Three examples of the kind of work I ship — each one built with React, Tailwind CSS and Supabase, and ready to be adapted to your product.',
+        'A couple of examples of the kind of work I ship — each one built with React, Tailwind CSS and Supabase, and ready to be adapted to your product.',
       viewDemo: 'View live demo',
+      ctaTitle: 'Got a project in mind?',
+      ctaDesc:
+        'Online stores, booking systems, custom dashboards — tell me what you need and we build it together.',
+      ctaButton: "Let's talk",
     },
     aiwork: {
       badge: '🔒 Proprietary work',
@@ -101,8 +105,12 @@ export const translations = {
       kicker: '// proyectos',
       heading: 'Lo que puedo construir para ti',
       description:
-        'Tres ejemplos del tipo de trabajo que entrego — todos construidos con React, Tailwind CSS y Supabase, y listos para adaptarse a tu producto.',
+        'Un par de ejemplos del tipo de trabajo que entrego — construidos con React, Tailwind CSS y Supabase, y listos para adaptarse a tu producto.',
       viewDemo: 'Ver demo en vivo',
+      ctaTitle: '¿Tienes un proyecto en mente?',
+      ctaDesc:
+        'Tiendas online, sistemas de reservas, dashboards a medida — cuéntame qué necesitas y lo construimos juntos.',
+      ctaButton: 'Hablemos',
     },
     aiwork: {
       badge: '🔒 Trabajo propietario',

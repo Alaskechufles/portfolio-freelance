@@ -74,6 +74,35 @@ export default function Work() {
             </div>
           </div>
         ))}
+        <div
+          data-reveal
+          className="reveal-card flex flex-col overflow-hidden rounded-[22px] border border-violet-600/12 bg-violet-600 shadow-[0_10px_34px_rgba(80,30,160,.06)] hover:border-violet-600/30 hover:shadow-[0_22px_54px_rgba(80,30,160,.14)]"
+        >
+          {/* <div className="flex aspect-[16/10] flex-col gap-2.5 border-b border-violet-600/10 bg-[linear-gradient(150deg,rgba(124,58,237,.10),rgba(217,70,239,.07))] p-3.5">
+            <div className="flex items-center gap-1.5">
+              <span className="h-2.25 w-2.25 rounded-full bg-violet-600/28" />
+              <span className="h-2.25 w-2.25 rounded-full bg-violet-600/20" />
+              <span className="h-2.25 w-2.25 rounded-full bg-violet-600/14" />
+            </div>
+            <div className="flex flex-1 items-center justify-center overflow-hidden rounded-2.5 border border-violet-600/12 bg-[repeating-linear-gradient(45deg,rgba(124,58,237,.10)_0_12px,rgba(255,255,255,.55)_12px_24px)]">
+              <span className="font-display text-[40px] leading-none font-bold text-violet-600/35">+</span>
+            </div>
+          </div> */}
+          <div className="flex flex-1 flex-col gap-4 p-6.5">
+            <div className="flex flex-col gap-2.25">
+              <h3 className="font-display text-[41px] text-white font-bold tracking-[-.01em]">{t.work.ctaTitle}</h3>
+              <p className="text-[18px] leading-[1.6] text-[#dedbe4]">{t.work.ctaDesc}</p>
+            </div>
+            <div className="mt-auto flex flex-wrap gap-2.5 pt-2">
+              <a
+                href="#contact"
+                className="min-w-33 flex-1 rounded-[11px] bg-gradient-to-br from-violet-200 to-fuchsia-200 px-4 py-3 text-center text-sm font-semibold text-violet-600 no-underline shadow-[0_6px_18px_rgba(124,58,237,.26)]"
+              >
+                {t.work.ctaButton}
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
