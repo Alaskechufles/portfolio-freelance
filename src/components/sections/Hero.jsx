@@ -1,5 +1,5 @@
 import heroImg from '../../assets/diego-hero.png';
-import cvFile from '../../assets/DiegoHuarsayaCruz-CV.pdf';
+import cvFile from '../../assets/Diego-Huarsaya-Cruz-CV.pdf';
 import { useLanguage } from '../../hooks/useLanguage';
 
 const SOCIALS = [
